@@ -3,142 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BNP Bookiinn Premium - شريكك المعتمد في كأس العالم 2026</title>
+    <title>BNP Bookiinn Premium - القائمة الذهبية لكأس العالم 2030</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         body { font-family: 'Tajawal', sans-serif; }
         html { scroll-behavior: smooth; }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+       .float-animation { animation: float 3s ease-in-out infinite; }
     </style>
 </head>
 <body class="bg-[#0F0F0F] text-white">
 
-    <!-- العداد الازرق + عداد المشاهدات الحي -->
-    <div class="fixed top-0 left-0 right-0 z-[60] bg-gradient-to-r from-blue-900 to-blue-500 text-white text-center py-3 font-bold text-sm md:text-base flex justify-center items-center gap-4">
-        <span id="countdown">جاري حساب الأيام المتبقية لكأس العالم 2026...</span>
+    <!-- الخلفية السينمائية + جسيمات ذهبية -->
+    <div class="fixed inset-0 -z-10">
+        <video autoplay loop muted playsinline class="w-full h-full object-cover opacity-20">
+            <source src="https://assets.mixkit.co/videos/preview/mixkit-soccer-stadium-at-night-4021-large.mp4" type="video/mp4">
+        </video>
+        <div class="absolute inset-0 bg-gradient-to-b from-black via-black/95 to-black"></div>
+    </div>
+    <div id="particles-js" class="fixed inset-0 -z-10 opacity-30"></div>
+
+    <!-- الشريط الازرق + عداد مهتمين حي -->
+    <div class="fixed top-0 left-0 right-0 z-[60] bg-gradient-to-r from-blue-900 to-blue-500 text-white text-center py-3 font-bold text-sm md:text-base flex justify-center items-center gap-4 backdrop-blur-md">
+        <span>🔥 القائمة الذهبية لكأس العالم 2030 - سجل الآن وكن أول من يعلم</span>
         <span class="hidden md:inline">|</span>
         <span class="flex items-center gap-2">
             <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
             <span id="live-viewers">1,200</span>
-            <span>يشاهد الآن</span>
+            <span>مهتم الآن</span>
         </span>
     </div>
 
     <!-- النافبار -->
-    <nav class="fixed w-full top-12 z-50 bg-black/90 backdrop-blur-lg border-b border-[#D4AF37]/20">
+    <nav class="fixed w-full top-12 z-50 bg-black/80 backdrop-blur-xl border-b border-[#D4AF37]/20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
-                <div class="flex items-center gap-3">
-                    <div class="w-10 h-10 bg-gradient-to-br from-[#D4AF37] to-[#B8941F] rounded-xl flex items-center justify-center">
-                        <span class="text-black font-black text-xl">👑</span>
+                <div class="flex items-center gap-3" data-aos="fade-right">
+                    <div class="w-12 h-12 bg-gradient-to-br from-[#D4AF37] to-[#B8941F] rounded-xl flex items-center justify-center float-animation">
+                        <span class="text-black font-black text-2xl">👑</span>
                     </div>
                     <div>
                         <h1 class="text-xl font-black text-[#D4AF37]">BNP Bookiinn Premium</h1>
-                        <p class="text-xs text-gray-400">شريكك المعتمد</p>
+                        <p class="text-xs text-gray-400">القائمة الذهبية</p>
                     </div>
-                </div>
                 <div class="hidden md:flex items-center gap-8">
                     <a href="#home" class="hover:text-[#D4AF37] transition">الرئيسية</a>
                     <a href="#services" class="hover:text-[#D4AF37] transition">خدماتنا</a>
                     <a href="#about" class="hover:text-[#D4AF37] transition">من نحن</a>
                     <a href="#contact" class="hover:text-[#D4AF37] transition">تواصل معنا</a>
                 </div>
-                <a href="https://wa.me/966567894737" class="bg-gradient-to-r from-[#D4AF37] to-[#B8941F] text-black px-6 py-3 rounded-xl font-bold hover:scale-105 transition">
-                    احجز الآن
+                <a href="https://wa.me/966567894737" class="bg-gradient-to-r from-[#D4AF37] to-[#B8941F] text-black px-6 py-3 rounded-xl font-bold hover:scale-105 transition shadow-[0_0_20px_rgba(212,175,55,0.5)]" data-aos="fade-left">
+                    انضم للقائمة الذهبية
                 </a>
             </div>
         </div>
     </nav>
 
     <!-- الهيرو -->
-    <section id="home" class="pt-40 pb-20 px-4 bg-gradient-to-b from-black via-[#1a1a1a] to-black">
+    <section id="home" class="pt-40 pb-20 px-4 relative">
         <div class="max-w-7xl mx-auto text-center">
-            <div class="inline-block bg-[#D4AF37]/10 border border-[#D4AF37]/30 rounded-full px-6 py-2 mb-6">
-                <span class="text-[#D4AF37] font-bold">✨ شريكك الرسمي في كأس العالم 2026</span>
+            <div class="inline-block bg-[#D4AF37]/10 border border-[#D4AF37]/30 rounded-full px-6 py-2 mb-6 backdrop-blur-md" data-aos="zoom-in">
+                <span class="text-[#D4AF37] font-bold">✨ تذاكر 2026 خلصت؟ 2030 نجهزك لها VIP</span>
             </div>
-            <h2 class="text-5xl md:text-7xl font-black mb-6 leading-tight">
-                تجربة لا تُنسى<br>
-                <span class="text-[#D4AF37]">في قلب الحدث</span>
+            <h2 class="text-5xl md:text-7xl font-black mb-6 leading-tight" data-aos="fade-up">
+                اللي يجهز من الحين<br>
+                <span class="text-[#D4AF37] drop-shadow-[0_0_30px_rgba(212,175,55,0.8)]">هو اللي يحضر 2030</span>
             </h2>
-            <p class="text-xl text-gray-300 mb-10 max-w-3xl mx-auto">
-                نحول حلمك بحضور كأس العالم إلى واقع ملكي. إقامة فاخرة، خدمات VIP، وتجربة استثنائية من الباب للباب
+            <p class="text-xl text-gray-300 mb-10 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                انضم للقائمة الذهبية الآن. اول ما تفتح باقات كأس العالم 2030، يجيك العرض قبل الكل + استشارة استثمارية مجانية في المدن المستضيفة
             </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-                <a href="https://wa.me/966567894737" class="bg-gradient-to-r from-[#D4AF37] to-[#B8941F] text-black px-8 py-4 rounded-xl font-black text-lg hover:scale-105 transition">
-                    احجز باقتك الآن 🚀
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-16" data-aos="fade-up" data-aos-delay="400">
+                <a href="https://wa.me/966567894737" class="bg-gradient-to-r from-[#D4AF37] to-[#B8941F] text-black px-8 py-4 rounded-xl font-black text-lg hover:scale-105 transition shadow-[0_0_40px_rgba(212,175,55,0.6)]">
+                    سجل في القائمة الذهبية 🚀
                 </a>
-                <a href="#services" class="bg-white/10 border border-white/20 px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/20 transition">
-                    اكتشف خدماتنا
+                <a href="#services" class="bg-white/10 border border-white/20 px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/20 transition backdrop-blur-md">
+                    ليش نسجل بدري؟
                 </a>
             </div>
 
             <!-- الارقام الحقيقية -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-                <div class="bg-white/5 border border-[#D4AF37]/20 rounded-2xl p-6">
+                <div class="bg-white/5 border border-[#D4AF37]/20 rounded-2xl p-6 backdrop-blur-md hover:border-[#D4AF37] hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
                     <div class="text-4xl font-black text-[#D4AF37] mb-2">6,696+</div>
-                    <p class="text-gray-400">متابع على منصتنا</p>
+                    <p class="text-gray-400">عضو في القائمة الذهبية</p>
                 </div>
-                <div class="bg-white/5 border border-[#D4AF37]/20 rounded-2xl p-6">
+                <div class="bg-white/5 border border-[#D4AF37]/20 rounded-2xl p-6 backdrop-blur-md hover:border-[#D4AF37] hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
                     <div class="text-4xl font-black text-[#D4AF37] mb-2">475K+</div>
                     <p class="text-gray-400">مشاهدة وأعجاب</p>
                 </div>
-                <div class="bg-white/5 border border-[#D4AF37]/20 rounded-2xl p-6">
+                <div class="bg-white/5 border border-[#D4AF37]/20 rounded-2xl p-6 backdrop-blur-md hover:border-[#D4AF37] hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
                     <div class="text-4xl font-black text-[#D4AF37] mb-2">98%</div>
-                    <p class="text-gray-400">رضا العملاء</p>
+                    <p class="text-gray-400">رضا الأعضاء</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- الخدمات -->
-    <section id="services" class="py-20 px-4 bg-black">
+    <section id="services" class="py-20 px-4 bg-black/50 backdrop-blur-sm">
         <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-16">
-                <h3 class="text-4xl md:text-5xl font-black mb-4">خدماتنا <span class="text-[#D4AF37]">الحصرية</span></h3>
-                <p class="text-gray-400 text-lg">باقات مصممة خصيصاً لعشاق كرة القدم</p>
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h3 class="text-4xl md:text-5xl font-black mb-4">ليش <span class="text-[#D4AF37]">القائمة الذهبية؟</span></h3>
+                <p class="text-gray-400 text-lg">مميزات حصرية للأعضاء فقط</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="bg-gradient-to-b from-[#1a1a1a] to-black border border-[#D4AF37]/20 rounded-2xl p-8 hover:border-[#D4AF37] transition">
-                    <div class="text-5xl mb-4">🏨</div>
-                    <h4 class="text-2xl font-bold mb-3 text-[#D4AF37]">السياحة الفاخرة</h4>
-                    <p class="text-gray-400">فنادق 5 نجوم + تذاكر المباريات + تنقلات VIP</p>
-                </div>
-                <div class="bg-gradient-to-b from-[#1a1a1a] to-black border border-[#D4AF37]/20 rounded-2xl p-8 hover:border-[#D4AF37] transition">
+                <div class="bg-gradient-to-b from-[#1a1a1a] to-black border border-[#D4AF37]/20 rounded-2xl p-8 hover:border-[#D4AF37] hover:scale-105 transition-all duration-300 backdrop-blur-md" data-aos="fade-up" data-aos-delay="100">
                     <div class="text-5xl mb-4">🎫</div>
-                    <h4 class="text-2xl font-bold mb-3 text-[#D4AF37]">العقارات</h4>
-                    <p class="text-gray-400">استثمار عقاري ذكي في المدن المستضيفة</p>
+                    <h4 class="text-2xl font-bold mb-3 text-[#D4AF37]">أولوية الحجز</h4>
+                    <p class="text-gray-400">تذاكر 2030 توصلك قبل ما تنزل للعامة بـ 48 ساعة</p>
                 </div>
-                <div class="bg-gradient-to-b from-[#1a1a1a] to-black border border-[#D4AF37]/20 rounded-2xl p-8 hover:border-[#D4AF37] transition">
+                <div class="bg-gradient-to-b from-[#1a1a1a] to-black border border-[#D4AF37]/20 rounded-2xl p-8 hover:border-[#D4AF37] hover:scale-105 transition-all duration-300 backdrop-blur-md" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-5xl mb-4">💰</div>
+                    <h4 class="text-2xl font-bold mb-3 text-[#D4AF37]">خصم حصري</h4>
+                    <p class="text-gray-400">خصم 15% للأعضاء على جميع الباقات</p>
+                </div>
+                <div class="bg-gradient-to-b from-[#1a1a1a] to-black border border-[#D4AF37]/20 rounded-2xl p-8 hover:border-[#D4AF37] hover:scale-105 transition-all duration-300 backdrop-blur-md" data-aos="fade-up" data-aos-delay="300">
                     <div class="text-5xl mb-4">💼</div>
-                    <h4 class="text-2xl font-bold mb-3 text-[#D4AF37]">الاستثمار</h4>
-                    <p class="text-gray-400">فرص استثمارية مضمونة العوائد</p>
+                    <h4 class="text-2xl font-bold mb-3 text-[#D4AF37]">استشارة مجانية</h4>
+                    <p class="text-gray-400">كيف تستثمر في عقارات المدن المستضيفة</p>
                 </div>
-                <div class="bg-gradient-to-b from-[#1a1a1a] to-black border border-[#D4AF37]/20 rounded-2xl p-8 hover:border-[#D4AF37] transition">
-                    <div class="text-5xl mb-4">📧</div>
-                    <h4 class="text-2xl font-bold mb-3 text-[#D4AF37]">تصميم المواقع</h4>
-                    <p class="text-gray-400">مواقع احترافية لعلامتك التجارية</p>
+                <div class="bg-gradient-to-b from-[#1a1a1a] to-black border border-[#D4AF37]/20 rounded-2xl p-8 hover:border-[#D4AF37] hover:scale-105 transition-all duration-300 backdrop-blur-md" data-aos="fade-up" data-aos-delay="400">
+                    <div class="text-5xl mb-4">👑</div>
+                    <h4 class="text-2xl font-bold mb-3 text-[#D4AF37]">خدمة VIP</h4>
+                    <p class="text-gray-400">مدير حساب خاص يخدمك 24/7</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- من نحن -->
-    <section id="about" class="py-20 px-4 bg-[#1a1a1a]">
+    <section id="about" class="py-20 px-4 bg-[#1a1a1a]/50 backdrop-blur-sm">
         <div class="max-w-7xl mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <div>
-                    <h3 class="text-4xl md:text-5xl font-black mb-6">من <span class="text-[#D4AF37]">نحن</span></h3>
+                <div data-aos="fade-right">
+                    <h3 class="text-4xl md:text-5xl font-black mb-6">ليش <span class="text-[#D4AF37]">تثق فينا؟</span></h3>
                     <p class="text-gray-300 text-lg mb-6 leading-relaxed">
-                        BNP Bookiinn Premium هي وجهتك الأولى لتجربة كأس العالم 2026 بأسلوب ملكي. نحن شريكك المعتمد رسمياً، نقدم باقات حصرية تجمع بين الفخامة والراحة.
+                        BNP Bookiinn Premium مو بس موقع حجوزات. احنا نبني لك خطة كاملة من الحين لين 2030. تذاكر + فندق + استثمار عقاري.
                     </p>
                     <p class="text-gray-300 text-lg mb-8 leading-relaxed">
-                        مع خبرة تتجاوز 10 سنوات في السياحة الفاخرة، خدمنا أكثر من 6,696 عميل وحققنا 475K+ مشاهدة على منصاتنا.
+                        مع خبرة 10 سنوات، خدمنا 6,696+ عميل. الحين دورك تدخل القائمة الذهبية.
                     </p>
-                    <a href="https://wa.me/966567894737" class="inline-block bg-gradient-to-r from-[#D4AF37] to-[#B8941F] text-black px-8 py-4 rounded-xl font-black hover:scale-105 transition">
-                        تواصل معنا الآن
+                    <a href="https://wa.me/966567894737" class="inline-block bg-gradient-to-r from-[#D4AF37] to-[#B8941F] text-black px-8 py-4 rounded-xl font-black hover:scale-105 transition shadow-[0_0_30px_rgba(212,175,55,0.5)]">
+                        سجل الآن مجاناً
                     </a>
                 </div>
-                <div class="bg-gradient-to-br from-[#D4AF37]/20 to-transparent border border-[#D4AF37]/30 rounded-3xl p-10">
+                <div class="bg-gradient-to-br from-[#D4AF37]/20 to-transparent border border-[#D4AF37]/30 rounded-3xl p-10 backdrop-blur-md" data-aos="fade-left">
                     <div class="space-y-6">
                         <div class="flex items-center gap-4">
                             <div class="w-12 h-12 bg-[#D4AF37] rounded-xl flex items-center justify-center text-2xl">✓</div>
@@ -146,19 +160,18 @@
                                 <h4 class="font-bold text-xl">شريك معتمد رسمياً</h4>
                                 <p class="text-gray-400">موثوق من الجهات الرسمية</p>
                             </div>
-                        </div>
                         <div class="flex items-center gap-4">
                             <div class="w-12 h-12 bg-[#D4AF37] rounded-xl flex items-center justify-center text-2xl">✓</div>
                             <div>
-                                <h4 class="font-bold text-xl">خدمة 24/7</h4>
-                                <p class="text-gray-400">دعم متواصل طوال رحلتك</p>
+                                <h4 class="font-bold text-xl">التسجيل مجاني 100%</h4>
+                                <p class="text-gray-400">ما تدفع شي الا وقت الحجز</p>
                             </div>
                         </div>
                         <div class="flex items-center gap-4">
                             <div class="w-12 h-12 bg-[#D4AF37] rounded-xl flex items-center justify-center text-2xl">✓</div>
                             <div>
-                                <h4 class="font-bold text-xl">ضمان استرداد</h4>
-                                <p class="text-gray-400">أموالك محمية 100%</p>
+                                <h4 class="font-bold text-xl">أماكن محدودة</h4>
+                                <p class="text-gray-400">نقفل التسجيل عند 10,000 عضو</p>
                             </div>
                         </div>
                     </div>
@@ -168,37 +181,37 @@
     </section>
 
     <!-- الفوتر -->
-    <footer id="contact" class="bg-black border-t border-[#D4AF37]/20 py-16 px-4">
+    <footer id="contact" class="bg-black/80 border-t border-[#D4AF37]/20 py-16 px-4 backdrop-blur-md">
         <div class="max-w-7xl mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
-                <div>
+                <div data-aos="fade-up">
                     <div class="flex items-center gap-3 mb-4">
                         <div class="w-10 h-10 bg-gradient-to-br from-[#D4AF37] to-[#B8941F] rounded-xl flex items-center justify-center">
                             <span class="text-black font-black text-xl">👑</span>
                         </div>
                         <h4 class="text-xl font-black text-[#D4AF37]">BNP Bookiinn</h4>
                     </div>
-                    <p class="text-gray-400">شريكك المعتمد لتجربة استثنائية في كأس العالم 2026 واستثمارات عقارية ذكية</p>
+                    <p class="text-gray-400">القائمة الذهبية لكأس العالم 2030. سجل بدري، احضر VIP</p>
                 </div>
-                <div>
+                <div data-aos="fade-up" data-aos-delay="100">
                     <h5 class="font-bold text-lg mb-4 text-[#D4AF37]">روابط سريعة</h5>
                     <ul class="space-y-2 text-gray-400">
                         <li><a href="#home" class="hover:text-[#D4AF37]">الرئيسية</a></li>
-                        <li><a href="#services" class="hover:text-[#D4AF37]">خدماتنا</a></li>
+                        <li><a href="#services" class="hover:text-[#D4AF37]">المميزات</a></li>
                         <li><a href="#about" class="hover:text-[#D4AF37]">من نحن</a></li>
                         <li><a href="#contact" class="hover:text-[#D4AF37]">تواصل معنا</a></li>
                     </ul>
                 </div>
-                <div>
+                <div data-aos="fade-up" data-aos-delay="200">
                     <h5 class="font-bold text-lg mb-4 text-[#D4AF37]">خدماتنا</h5>
                     <ul class="space-y-2 text-gray-400">
+                        <li>تذاكر كأس العالم</li>
                         <li>السياحة الفاخرة</li>
-                        <li>العقارات</li>
-                        <li>الاستثمار</li>
-                        <li>تصميم المواقع</li>
+                        <li>الاستثمار العقاري</li>
+                        <li>استشارات VIP</li>
                     </ul>
                 </div>
-                <div>
+                <div data-aos="fade-up" data-aos-delay="300">
                     <h5 class="font-bold text-lg mb-4 text-[#D4AF37]">تواصل معنا</h5>
                     <ul class="space-y-3 text-gray-400">
                         <li class="flex items-center gap-2">
@@ -211,7 +224,7 @@
                         </li>
                         <li class="flex items-center gap-2">
                             <span>🎵</span>
-                            <a href="#" class="hover:text-[#D4AF37]">bookiinnpremium@</a>
+                            <a href="#" class="hover:text-[#D4AF37]">@bookiinnpremium</a>
                         </li>
                     </ul>
                 </div>
@@ -222,29 +235,46 @@
         </div>
     </footer>
 
+    <!-- زر واتساب مجنون -->
+    <a href="https://wa.me/966567894737" class="fixed bottom-6 left-6 bg-gradient-to-r from-green-500 via-green-600 to-green-500 text-white px-6 py-4 rounded-2xl font-black text-lg shadow-[0_0_30px_rgba(34,197,94,0.6)] hover:shadow-[0_0_50px_rgba(34,197,94,0.9)] hover:scale-110 transition-all duration-300 animate-pulse z-[80] border-2 border-green-400">
+        <span class="flex items-center gap-3">
+            <span class="text-3xl animate-bounce">💬</span>
+            <span>القائمة الذهبية</span>
+            <span class="absolute -top-2 -right-2 w-5 h-5 bg-red-500 rounded-full animate-ping"></span>
+            <span class="absolute -top-2 -right-2 w-5 h-5 bg-red-500 rounded-full"></span>
+        </span>
+    </a>
+
     <!-- شريط الاشعارات الحية -->
-    <div id="live-notification" class="fixed bottom-6 right-6 bg-green-600 text-white px-6 py-4 rounded-2xl shadow-2xl z-[70] transform translate-x-[400px] transition-transform duration-500">
+    <div id="live-notification" class="fixed bottom-24 right-6 bg-gradient-to-r from-green-600 to-green-500 text-white px-6 py-4 rounded-2xl shadow-2xl z-[70] transform translate-x-[400px] transition-transform duration-500 border border-green-400">
         <div class="flex items-center gap-3">
             <div class="w-3 h-3 bg-white rounded-full animate-pulse"></div>
             <div>
-                <p class="font-bold text-sm" id="notification-text">أحمد من الرياض يحجز باقة كأس العالم الآن</p>
+                <p class="font-bold text-sm" id="notification-text">أحمد من الرياض انضم للقائمة الذهبية</p>
                 <p class="text-xs opacity-80">قبل ثوانٍ</p>
             </div>
         </div>
     </div>
 
+    <!-- السكربتات -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        // عداد كاس العالم
-        const worldCup = new Date("2026-06-11T00:00:00").getTime();
-        setInterval(function() {
-            const now = new Date().getTime();
-            const distance = worldCup - now;
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            document.getElementById("countdown").innerHTML = `متبقي ${days} يوم و ${hours} ساعة على كأس العالم 2026`;
-        }, 1000);
+        // تهيئة AOS
+        AOS.init({duration: 1200, once: true, offset: 100});
 
-        // عداد المشاهدات الحي
+        // الجسيمات الذهبية
+        particlesJS("particles-js", {
+            "particles": {
+                "number": {"value": 80},
+                "color": {"value": "#D4AF37"},
+                "shape": {"type": "circle"},
+                "opacity": {"value": 0.5, "random": true},
+                "size": {"value": 3, "random": true},
+                "move": {"enable": true, "speed": 1, "direction": "none", "random": true}
+            }
+        });
+
+        // عداد مهتمين حي
         let viewers = 1200;
         setInterval(function() {
             const change = Math.floor(Math.random() * 7) - 3;
@@ -252,21 +282,24 @@
             document.getElementById("live-viewers").textContent = viewers.toLocaleString('en-US');
         }, 3000);
 
-        // الاشعارات الحية
+        // الاشعارات الحية + صوت
         const notifications = [
-            "أحمد من الرياض يحجز باقة كأس العالم الآن",
-            "سارة من جدة تتصفح عروض الفنادق",
-            "محمد من الدمام أضاف باقة VIP للسلة",
-            "فاطمة من دبي تتواصل معنا الآن",
-            "خالد من الكويت يحجز الآن",
-            "نورة من البحرين تشاهد العروض",
-            "عبدالله من قطر يستفسر عن التذاكر",
-            "ليلى من عمان تضيف باقة للسلة",
-            "يوسف من الرياض حجز مقعدين للتو",
-            "منى من جدة أكملت عملية الدفع",
-            "سعد من المدينة يشاهد باقة الفندق",
-            "هند من ابها تضيف تذاكر للسلة"
+            "أحمد من الرياض انضم للقائمة الذهبية",
+            "سارة من جدة سجلت اهتمامها بكأس العالم 2030",
+            "محمد من الدمام طلب استشارة استثمارية",
+            "فاطمة من دبي تتابع جديد العروض",
+            "خالد من الكويت انضم للتو",
+            "نورة من البحرين سجلت بياناتها",
+            "عبدالله من قطر مهتم بالباقات القادمة",
+            "ليلى من عمان انضمت للقائمة",
+            "يوسف من الرياض حجز استشارة للتو",
+            "منى من جدة انضمت للقائمة الذهبية",
+            "سعد من المدينة يسأل عن الاستثمار",
+            "هند من ابها سجلت اهتمامها"
         ];
+
+        const popSound = new Audio('https://assets.mixkit.co/active_storage/sfx/235/235-preview.mp3');
+        popSound.volume = 0.3;
 
         function showNotification() {
             const notification = document.getElementById('live-notification');
@@ -274,6 +307,7 @@
             const randomText = notifications[Math.floor(Math.random() * notifications.length)];
             text.textContent = randomText;
             notification.style.transform = 'translateX(0)';
+            popSound.play();
             setTimeout(() => {
                 notification.style.transform = 'translateX(400px)';
             }, 4000);
