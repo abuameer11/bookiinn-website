@@ -1,608 +1,212 @@
-
- 
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
- <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-X1VYZYL1N3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-X1VYZYL1N3');
-</script>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BNP Bookiinn Premium | حجوزات كأس العالم 2026</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<style>
-    * {
-        font-family: 'Tajawal', sans-serif;
-    }
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X1VYZYL1N3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X1VYZYL1N3');
+    </script>
     
-    html {
-        scroll-behavior: smooth;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookiinn Premium | حجز فنادق كأس العالم 2026</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
-    body {
-        background: #0a0a0a;
-        color: #f5f5f5;
-    }
-    
-    .gold-gradient {
-        background: linear-gradient(135deg, #D4AF37 0%, #F9E076 50%, #D4AF37 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-    }
-    
-    .gold-bg-gradient {
-        background: linear-gradient(135deg, #D4AF37 0%, #B8960F 50%, #D4AF37 100%);
-    }
-    
-    .hero-pattern {
-        background-image: 
-            radial-gradient(circle at 20% 50%, rgba(212, 175, 55, 0.1) 0%, transparent 50%),
-            radial-gradient(circle at 80% 80%, rgba(212, 175, 55, 0.08) 0%, transparent 50%);
-    }
-    
-    .glass-card {
-        background: rgba(255, 255, 255, 0.03);
-        backdrop-filter: blur(10px);
-        border: 1px solid rgba(212, 175, 55, 0.2);
-        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    
-    .glass-card:hover {
-        background: rgba(255, 255, 255, 0.06);
-        border-color: rgba(212, 175, 55, 0.5);
-        transform: translateY(-8px);
-        box-shadow: 0 20px 40px rgba(212, 175, 55, 0.15);
-    }
-    
-    .btn-gold {
-        position: relative;
-        overflow: hidden;
-        transition: all 0.3s ease;
-    }
-    
-    .btn-gold::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: -100%;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-        transition: left 0.5s ease;
-    }
-    
-    .btn-gold:hover::before {
-        left: 100%;
-    }
-    
-    .btn-gold:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 10px 30px rgba(212, 175, 55, 0.4);
-    }
-    
-    .flag-emoji {
-        filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
-        transition: transform 0.3s ease;
-    }
-    
-    .flag-emoji:hover {
-        transform: scale(1.2) rotate(5deg);
-    }
-    
-    @keyframes fadeInUp {
-        from {
-            opacity: 0;
-            transform: translateY(30px);
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Tajawal', sans-serif;
         }
-        to {
-            opacity: 1;
-            transform: translateY(0);
+        
+        body {
+            background: #f5f5f5;
         }
-    }
-    
-    .animate-fade-in-up {
-        animation: fadeInUp 0.8s ease-out forwards;
-    }
-    
-    .animate-delay-1 { animation-delay: 0.1s; opacity: 0; }
-    .animate-delay-2 { animation-delay: 0.2s; opacity: 0; }
-    .animate-delay-3 { animation-delay: 0.3s; opacity: 0; }
-    .animate-delay-4 { animation-delay: 0.4s; opacity: 0; }
-    
-    .stat-number {
-        font-variant-numeric: tabular-nums;
-    }
-    
-    .nav-link {
-        position: relative;
-    }
-    
-    .nav-link::after {
-        content: '';
-        position: absolute;
-        bottom: -4px;
-        right: 0;
-        width: 0;
-        height: 2px;
-        background: #D4AF37;
-        transition: width 0.3s ease;
-    }
-    
-    .nav-link:hover::after {
-        width: 100%;
-    }
-    
-    .mobile-menu {
-        transform: translateX(100%);
-        transition: transform 0.3s ease;
-    }
-    
-    .mobile-menu.active {
-        transform: translateX(0);
-    }
-</style>
+        
+        /* عداد كاس العالم */
+        .countdown {
+            background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+            color: white;
+            text-align: center;
+            padding: 12px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        /* شريط الاثبات الاجتماعي */
+        .social-proof {
+            background: #059669;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 16px;
+        }
+        
+        /* الهيرو */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1522770179533-24471fcdba45?w=1200');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            font-weight: 900;
+        }
+        
+        .hero p {
+            font-size: 22px;
+            margin-bottom: 30px;
+        }
+        
+        .cta-btn {
+            background: #f59e0b;
+            color: #000;
+            padding: 18px 40px;
+            font-size: 20px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .cta-btn:hover {
+            background: #d97706;
+        }
+        
+        /* زر واتساب ثابت */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: white;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        /* الفوتر */
+        footer {
+            background: #111;
+            color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+        
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            color: #3b82f6;
+        }
+    </style>
 </head>
-<body class="antialiased">
-    <!-- Navbar -->
-    <nav class="fixed w-full top-0 z-50 bg-black/80 backdrop-blur-lg border-b border-[#D4AF37]/20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16 md:h-20">
-                <div class="flex items-center gap-3">
-                    <div class="w-10 h-10 md:w-12 md:h-12 rounded-full gold-bg-gradient flex items-center justify-center">
-                        <i class="fas fa-crown text-black text-lg md:text-xl"></i>
-                    </div>
-                    <div>
-                        <h1 class="text-lg md:text-xl font-bold gold-gradient">BNP Bookiinn Premium</h1>
-                        <p class="text-[10px] md:text-xs text-gray-400">الوجهة الأولى للفخامة</p>
-                    </div>
-                </div>
-                
-                <div class="hidden md:flex items-center gap-8">
-                    <a href="#hero" class="nav-link text-gray-300 hover:text-[#D4AF37] transition">الرئيسية</a>
-                    <a href="#services" class="nav-link text-gray-300 hover:text-[#D4AF37] transition">خدماتنا</a>
-                    <a href="#trust" class="nav-link text-gray-300 hover:text-[#D4AF37] transition">لماذا نحن</a>
-                    <a href="#contact" class="nav-link text-gray-300 hover:text-[#D4AF37] transition">تواصل معنا</a>
-                </div>
-                
-                <a href="https://wa.me/966567894737" target="_blank" class="hidden md:flex items-center gap-2 gold-bg-gradient text-black px-5 py-2.5 rounded-full font-bold btn-gold">
-                    <i class="fab fa-whatsapp text-lg"></i>
-                    <span>احجز الآن</span>
-                </a>
-                
-                <button id="menuBtn" class="md:hidden text-[#D4AF37] text-2xl">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </div>
+<body>
+    <!-- عداد كاس العالم 2026 -->
+    <div class="countdown" id="countdown">
+        جاري حساب الأيام المتبقية لكأس العالم 2026...
+    </div>
+
+    <!-- شريط الاثبات الاجتماعي - يزيد الثقة -->
+    <div class="social-proof" id="liveViews">
+        🔥 يشاهد الموقع الآن 127 شخص | تم حجز 23 غرفة اليوم
+    </div>
+
+    <!-- الهيرو -->
+    <section class="hero">
+        <h1>احجز فندقك لكأس العالم 2026</h1>
+        <p>أفضل الفنادق في أمريكا وكندا والمكسيك بأسعار حصرية</p>
+        <a href="https://wa.me/966567894723?text=مرحبا، ابي احجز لكاس العالم" class="cta-btn">
+            احجز واتساب فوراً
+        </a>
+    </section>
+
+    <!-- زر واتساب ثابت -->
+    <a href="https://wa.me/966567894723?text=مرحبا، ابي احجز لكاس العالم" 
+       class="whatsapp-float" target="_blank">
+       <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- الفوتر -->
+    <footer>
+        <p><strong>Bookiinn Premium © 2026</strong></p>
+        <p>تصميم وتطوير وإدارة مواقع | Website Design, Development & Management</p>
+        
+        <!-- الخدمات -->
+        <div style="margin: 25px 0; font-size: 15px; line-height: 2; border-top: 1px solid #333; border-bottom: 1px solid #333; padding: 20px 0;">
+            <p style="font-size: 18px; margin-bottom: 15px;"><strong>خدماتنا:</strong></p>
+            <p>✓ حجز فنادق كأس العالم 2026 - أمريكا، كندا، المكسيك</p>
+            <p>✓ تصميم وتطوير مواقع احترافية</p>
+            <p>✓ إدارة مواقع وحملات اعلانية</p>
+            <p>✓ استشارات عقارية واستثمارية</p>
         </div>
-    </nav>
-    
-    <!-- Mobile Menu -->
-    <div id="mobileMenu" class="mobile-menu fixed inset-0 bg-black/95 z-40 md:hidden">
-        <div class="flex flex-col items-center justify-center h-full gap-8 text-xl">
-            <button id="closeMenu" class="absolute top-6 left-6 text-[#D4AF37] text-3xl">
-                <i class="fas fa-times"></i>
-            </button>
-            <a href="#hero" class="text-gray-300 hover:text-[#D4AF37] transition mobile-link">الرئيسية</a>
-            <a href="#services" class="text-gray-300 hover:text-[#D4AF37] transition mobile-link">خدماتنا</a>
-            <a href="#trust" class="text-gray-300 hover:text-[#D4AF37] transition mobile-link">لماذا نحن</a>
-            <a href="#contact" class="text-gray-300 hover:text-[#D4AF37] transition mobile-link">تواصل معنا</a>
-            <a href="https://wa.me/966567894737" target="_blank" class="gold-bg-gradient text-black px-8 py-3 rounded-full font-bold mt-4">
-                <i class="fab fa-whatsapp ml-2"></i>تواصل واتساب
+
+        <!-- السوشيال ميديا -->
+        <div style="margin-top:25px;">
+            <p style="margin-bottom:15px; font-size: 16px;">تابعنا وتواصل معنا 24/7:</p>
+            <a href="https://tiktok.com/@bookiinnpremium" target="_blank" style="font-size:32px; margin:0 15px;">
+                <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="https://wa.me/966567894723?text=مرحبا، ابي استفسر عن خدماتكم" target="_blank" style="color:#25d366; font-size:32px; margin:0 15px;">
+                <i class="fab fa-whatsapp"></i>
             </a>
         </div>
-    </div>
- 
-    <!-- Hero Section -->
-    <section id="hero" class="relative min-h-screen flex items-center justify-center hero-pattern overflow-hidden pt-20">
-        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 to-black pointer-events-none"></div>
         
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
-            <div class="text-center">
-                <div class="inline-flex items-center gap-2 bg-[#D4AF37]/10 border border-[#D4AF37]/30 rounded-full px-4 py-2 mb-6 animate-fade-in-up">
-                    <i class="fas fa-star text-[#D4AF37] text-sm"></i>
-                    <span class="text-sm text-[#D4AF37] font-medium">شريكك المميز للسفر والاستثمار</span>
-                </div>
-                
-                <h2 class="text-4xl sm:text-5xl md:text-7xl font-black mb-6 leading-tight animate-fade-in-up animate-delay-1">
-                    احجز مقعدك في <br>
-                    <span class="gold-gradient">كأس العالم 2026</span>
-                </h2>
-                
-                <p class="text-lg sm:text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-8 leading-relaxed animate-fade-in-up animate-delay-2">
-                    تجربة فاخرة لا تُنسى مع BNP Bookiinn Premium. تذاكر VIP، إقامة 5 نجوم، وخدمة كونسيرج 24/7 لأهم حدث رياضي في العالم
-                </p>
-                
-                <!-- Flags -->
-                <div class="flex items-center justify-center gap-4 md:gap-6 mb-10 animate-fade-in-up animate-delay-3">
-                    <div class="text-center">
-                        <div class="text-4xl md:text-5xl flag-emoji mb-2">🇸🇦</div>
-                        <p class="text-xs text-gray-400">السعودية</p>
-                    </div>
-                    <i class="fas fa-plus text-[#D4AF37]/50 text-sm"></i>
-                    <div class="text-center">
-                        <div class="text-4xl md:text-5xl flag-emoji mb-2">🇲🇽</div>
-                        <p class="text-xs text-gray-400">المكسيك</p>
-                    </div>
-                    <i class="fas fa-plus text-[#D4AF37]/50 text-sm"></i>
-                    <div class="text-center">
-                        <div class="text-4xl md:text-5xl flag-emoji mb-2">🇺🇸</div>
-                        <p class="text-xs text-gray-400">أمريكا</p>
-                    </div>
-                    <i class="fas fa-plus text-[#D4AF37]/50 text-sm"></i>
-                    <div class="text-center">
-                        <div class="text-4xl md:text-5xl flag-emoji mb-2">🇨🇦</div>
-                        <p class="text-xs text-gray-400">كندا</p>
-                    </div>
-                </div>
-                
-                <!-- CTA -->
-                <div class="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up animate-delay-4">
-                    <a href="https://wa.me/966567894737" target="_blank" class="w-full sm:w-auto gold-bg-gradient text-black px-8 md:px-12 py-4 md:py-5 rounded-full font-bold text-lg md:text-xl btn-gold flex items-center justify-center gap-3 shadow-lg shadow-[#D4AF37]/30">
-                        <i class="fab fa-whatsapp text-2xl"></i>
-                        <span>احجز عبر واتساب الآن</span>
-                    </a>
-                    <a href="#services" class="w-full sm:w-auto bg-white/5 border border-[#D4AF37]/30 text-white px-8 md:px-12 py-4 md:py-5 rounded-full font-bold text-lg hover:bg-white/10 transition flex items-center justify-center gap-3">
-                        <span>اكتشف خدماتنا</span>
-                        <i class="fas fa-arrow-down"></i>
-                    </a>
-                </div>
-                
-                <div class="mt-12 flex flex-wrap items-center justify-center gap-6 md:gap-12 text-sm text-gray-400">
-                    <div class="flex items-center gap-2">
-                        <i class="fas fa-check-circle text-[#D4AF37]"></i>
-                        <span>ضمان أفضل سعر</span>
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <i class="fas fa-check-circle text-[#D4AF37]"></i>
-                        <span>دعم فوري 24/7</span>
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <i class="fas fa-check-circle text-[#D4AF37]"></i>
-                        <span>حجوزات مؤكدة 100%</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-            <i class="fas fa-chevron-down text-[#D4AF37] text-2xl opacity-50"></i>
-        </div>
-    </section>
- 
-    <!-- Services Section -->
-    <section id="services" class="py-20 md:py-32 relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <span class="inline-block text-[#D4AF37] font-bold mb-3 text-sm uppercase tracking-wider">خدماتنا المميزة</span>
-                <h3 class="text-3xl md:text-5xl font-black mb-4">
-                    تجربة <span class="gold-gradient">VIP متكاملة</span>
-                </h3>
-                <p class="text-gray-400 text-lg max-w-2xl mx-auto">
-                    نقدم باقة شاملة من الخدمات الفاخرة المصممة لتلبية تطلعات عملائنا المميزين
-                </p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-                <!-- Tourism -->
-                <div class="glass-card rounded-3xl p-8 md:p-10">
-                    <div class="w-16 h-16 gold-bg-gradient rounded-2xl flex items-center justify-center mb-6">
-                        <i class="fas fa-plane text-black text-2xl"></i>
-                    </div>
-                    <h4 class="text-2xl font-bold mb-4">السياحة الفاخرة</h4>
-                    <p class="text-gray-400 mb-6 leading-relaxed">
-                        باقات سفر VIP مخصصة لكأس العالم 2026. تشمل تذاكر المباريات، فنادق 5 نجوم، نقل خاص، وجولات سياحية حصرية في المدن المستضيفة.
-                    </p>
-                    <ul class="space-y-3 text-sm">
-                        <li class="flex items-center gap-3">
-                            <i class="fas fa-check text-[#D4AF37]"></i>
-                            <span class="text-gray-300">تذاكر VIP وكبار الشخصيات</span>
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <i class="fas fa-check text-[#D4AF37]"></i>
-                            <span class="text-gray-300">إقامة فندقية فاخرة</span>
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <i class="fas fa-check text-[#D4AF37]"></i>
-                            <span class="text-gray-300">خدمة كونسيرج شخصية</span>
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <i class="fas fa-check text-[#D4AF37]"></i>
-                            <span class="text-gray-300">تأشيرات وترتيبات السفر</span>
-                        </li>
-                    </ul>
-                </div>
-                
-                <!-- Real Estate -->
-                <div class="glass-card rounded-3xl p-8 md:p-10">
-                    <div class="w-16 h-16 gold-bg-gradient rounded-2xl flex items-center justify-center mb-6">
-                        <i class="fas fa-building text-black text-2xl"></i>
-                    </div>
-                    <h4 class="text-2xl font-bold mb-4">العقار المميز</h4>
-                    <p class="text-gray-400 mb-6 leading-relaxed">
-                        فرص استثمارية حصرية في أرقى المواقع. شقق فاخرة، فلل، وعقارات تجارية في السعودية ودول الخليج مع عوائد استثمارية مجزية.
-                    </p>
-                    <ul class="space-y-3 text-sm">
-                        <li class="flex items-center gap-3">
-                            <i class="fas fa-check text-[#D4AF37]"></i>
-                            <span class="text-gray-300">عقارات حصرية في مواقع استراتيجية</span>
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <i class="fas fa-check text-[#D4AF37]"></i>
-                            <span class="text-gray-300">استشارات قانونية متكاملة</span>
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <i class="fas fa-check text-[#D4AF37]"></i>
-                            <span class="text-gray-300">إدارة الأملاك والصيانة</span>
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <i class="fas fa-check text-[#D4AF37]"></i>
-                            <span class="text-gray-300">تسهيلات تمويلية مميزة</span>
-                        </li>
-                    </ul>
-                </div>
-                
-                <!-- Investment -->
-                <div class="glass-card rounded-3xl p-8 md:p-10">
-                    <div class="w-16 h-16 gold-bg-gradient rounded-2xl flex items-center justify-center mb-6">
-                        <i class="fas fa-chart-line text-black text-2xl"></i>
-                    </div>
-                    <h4 class="text-2xl font-bold mb-4">الاستثمار الذكي</h4>
-                    <p class="text-gray-400 mb-6 leading-relaxed">
-                        محفظة استثمارية متنوعة بإدارة خبراء. أسهم، صناديق استثمارية، ومشاريع ريادية مع خطط مخصصة لتحقيق أهدافك المالية.
-                    </p>
-                    <ul class="space-y-3 text-sm">
-                        <li class="flex items-center gap-3">
-                            <i class="fas fa-check text-[#D4AF37]"></i>
-                            <span class="text-gray-300">استشارات مالية شخصية</span>
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <i class="fas fa-check text-[#D4AF37]"></i>
-                            <span class="text-gray-300">محافظ استثمارية متنوعة</span>
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <i class="fas fa-check text-[#D4AF37]"></i>
-                            <span class="text-gray-300">تقارير دورية شفافة</span>
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <i class="fas fa-check text-[#D4AF37]"></i>
-                            <span class="text-gray-300">فرص استثمارية حصرية</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
- 
-    <!-- Trust Section -->
-    <section id="trust" class="py-20 md:py-32 relative">
-        <div class="absolute inset-0 bg-gradient-to-b from-[#D4AF37]/5 to-transparent"></div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-            <div class="text-center mb-16">
-                <span class="inline-block text-[#D4AF37] font-bold mb-3 text-sm uppercase tracking-wider">ثقة عملائنا</span>
-                <h3 class="text-3xl md:text-5xl font-black mb-4">
-                    أرقام <span class="gold-gradient">تتحدث عنا</span>
-                </h3>
-                <p class="text-gray-400 text-lg max-w-2xl mx-auto">
-                    مجتمع متنامٍ من العملاء المميزين يثقون بخدماتنا الفاخرة
-                </p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-16">
-                <div class="glass-card rounded-3xl p-8 md:p-10 text-center">
-                    <div class="text-5xl md:text-6xl font-black gold-gradient mb-3 stat-number">+6,500</div>
-                    <p class="text-xl font-bold text-gray-200 mb-2">متابع</p>
-                    <p class="text-gray-400 text-sm">على منصات التواصل الاجتماعي</p>
-                    <div class="flex items-center justify-center gap-2 mt-4">
-                        <i class="fab fa-tiktok text-[#D4AF37]"></i>
-                        <i class="fab fa-instagram text-[#D4AF37]"></i>
-                        <i class="fab fa-snapchat text-[#D4AF37]"></i>
-                    </div>
-                </div>
-                
-                <div class="glass-card rounded-3xl p-8 md:p-10 text-center">
-                    <div class="text-5xl md:text-6xl font-black gold-gradient mb-3 stat-number">+316K</div>
-                    <p class="text-xl font-bold text-gray-200 mb-2">مشاهدة</p>
-                    <p class="text-gray-400 text-sm">محتوى حصري عن السفر والاستثمار</p>
-                    <div class="flex items-center justify-center gap-2 mt-4">
-                        <i class="fas fa-eye text-[#D4AF37]"></i>
-                        <i class="fas fa-play-circle text-[#D4AF37]"></i>
-                    </div>
-                </div>
-                
-                <div class="glass-card rounded-3xl p-8 md:p-10 text-center">
-                    <div class="text-5xl md:text-6xl font-black gold-gradient mb-3 stat-number">98%</div>
-                    <p class="text-xl font-bold text-gray-200 mb-2">رضا العملاء</p>
-                    <p class="text-gray-400 text-sm">تقييمات 5 نجوم من عملائنا</p>
-                    <div class="flex items-center justify-center gap-1 mt-4">
-                        <i class="fas fa-star text-[#D4AF37]"></i>
-                        <i class="fas fa-star text-[#D4AF37]"></i>
-                        <i class="fas fa-star text-[#D4AF37]"></i>
-                        <i class="fas fa-star text-[#D4AF37]"></i>
-                        <i class="fas fa-star text-[#D4AF37]"></i>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Testimonial -->
-            <div class="glass-card rounded-3xl p-8 md:p-12 max-w-4xl mx-auto">
-                <div class="flex items-start gap-4 mb-6">
-                    <i class="fas fa-quote-right text-4xl text-[#D4AF37]/30"></i>
-                </div>
-                <p class="text-lg md:text-xl text-gray-300 leading-relaxed mb-6">
-                    "تجربة استثنائية مع BNP Bookiinn Premium! حجزت باقة كأس العالم وكانت الخدمة تفوق التوقعات. من الاستقبال في المطار حتى العودة، كل شيء كان منظم بدقة واحترافية عالية. فريق عمل راقي وخدمة عملاء 24/7. أنصح بهم بشدة لكل من يبحث عن الفخامة الحقيقية"
-                </p>
-                <div class="flex items-center gap-4">
-                    <div class="w-12 h-12 rounded-full gold-bg-gradient flex items-center justify-center">
-                        <i class="fas fa-user text-black"></i>
-                    </div>
-                    <div>
-                        <p class="font-bold text-white">أحمد المطيري</p>
-                        <p class="text-sm text-gray-400">عميل VIP - الرياض</p>
-                    </div>
-                    <div class="mr-auto flex gap-1">
-                        <i class="fas fa-star text-[#D4AF37] text-sm"></i>
-                        <i class="fas fa-star text-[#D4AF37] text-sm"></i>
-                        <i class="fas fa-star text-[#D4AF37] text-sm"></i>
-                        <i class="fas fa-star text-[#D4AF37] text-sm"></i>
-                        <i class="fas fa-star text-[#D4AF37] text-sm"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
- 
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 md:py-32 relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="glass-card rounded-3xl p-8 md:p-16 text-center border-2 border-[#D4AF37]/30">
-                <div class="inline-flex items-center gap-2 bg-[#D4AF37]/10 border border-[#D4AF37]/30 rounded-full px-4 py-2 mb-6">
-                    <i class="fas fa-headset text-[#D4AF37] text-sm"></i>
-                    <span class="text-sm text-[#D4AF37] font-medium">متاحون 24/7 لخدمتك</span>
-                </div>
-                
-                <h3 class="text-3xl md:text-5xl font-black mb-6">
-                    جاهز لتجربة <span class="gold-gradient">لا تُنسى؟</span>
-                </h3>
-                <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-10 leading-relaxed">
-                    فريقنا المختص بانتظارك على الواتساب. احجز استشارتك المجانية الآن واحصل على عرض حصري
-                </p>
-                
-                <a href="https://wa.me/966567894737" target="_blank" class="inline-flex items-center gap-3 gold-bg-gradient text-black px-10 md:px-16 py-5 md:py-6 rounded-full font-bold text-xl md:text-2xl btn-gold shadow-2xl shadow-[#D4AF37]/40 mb-10">
-                    <i class="fab fa-whatsapp text-3xl"></i>
-                    <span>تواصل واتساب الآن</span>
-                </a>
-                
-                <div class="flex flex-col sm:flex-row items-center justify-center gap-6 md:gap-12 pt-10 border-t border-[#D4AF37]/20">
-                    <a href="https://www.tiktok.com/@bookiinnpremium" target="_blank" class="flex items-center gap-3 text-gray-300 hover:text-[#D4AF37] transition group">
-                        <div class="w-12 h-12 rounded-full bg-white/5 border border-[#D4AF37]/30 flex items-center justify-center group-hover:bg-[#D4AF37]/10 transition">
-                            <i class="fab fa-tiktok text-xl"></i>
-                        </div>
-                        <div class="text-right">
-                            <p class="text-xs text-gray-500">تابعنا على</p>
-                            <p class="font-bold">@bookiinnpremium</p>
-                        </div>
-                    </a>
-                    
-                    <div class="hidden sm:block w-px h-12 bg-[#D4AF37]/20"></div>
-                    
-                    <div class="flex items-center gap-3 text-gray-300">
-                        <div class="w-12 h-12 rounded-full bg-white/5 border border-[#D4AF37]/30 flex items-center justify-center">
-                            <i class="fas fa-phone text-xl text-[#D4AF37]"></i>
-                        </div>
-                        <div class="text-right">
-                            <p class="text-xs text-gray-500">واتساب مباشر</p>
-                            <p class="font-bold" dir="ltr">+966 56 789 4737</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
- 
-    <!-- Footer -->
-    <footer class="border-t border-[#D4AF37]/20 py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
-                <div class="flex items-center gap-3">
-                    <div class="w-10 h-10 rounded-full gold-bg-gradient flex items-center justify-center">
-                        <i class="fas fa-crown text-black"></i>
-                    </div>
-                    <div class="text-right">
-                        <h4 class="font-bold gold-gradient">BNP Bookiinn Premium</h4>
-                        <p class="text-xs text-gray-500">الفخامة عنواننا</p>
-                    </div>
-                </div>
-                
-                <div class="flex flex-wrap items-center justify-center gap-6 text-sm text-gray-400">
-                    <a href="#hero" class="hover:text-[#D4AF37] transition">الرئيسية</a>
-                    <span class="text-[#D4AF37]/30">•</span>
-                    <a href="#services" class="hover:text-[#D4AF37] transition">خدماتنا</a>
-                    <span class="text-[#D4AF37]/30">•</span>
-                    <a href="https://wa.me/966567894737" target="_blank" class="hover:text-[#D4AF37] transition">تواصل معنا</a>
-                </div>
-                
-                <p class="text-sm text-gray-500">
-                    © 2024 BNP Bookiinn Premium. جميع الحقوق محفوظة
-                </p>
-            </div>
-        </div>
+        <p style="margin-top: 30px; font-size: 13px; color: #888;">
+            شركة Bookiinn Premium القابضة | متخصصون في حجوزات كأس العالم 2026
+        </p>
     </footer>
- 
-    <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/966567894737" target="_blank" class="fixed bottom-6 left-6 z-50 w-14 h-14 md:w-16 md:h-16 gold-bg-gradient rounded-full flex items-center justify-center shadow-2xl shadow-[#D4AF37]/50 hover:scale-110 transition-transform btn-gold">
-        <i class="fab fa-whatsapp text-black text-2xl md:text-3xl"></i>
-    </a>
- 
+
+    <!-- سكريبت العداد + عداد الزوار الوهمي -->
     <script>
-        // Mobile Menu Toggle
-        const menuBtn = document.getElementById('menuBtn');
-        const mobileMenu = document.getElementById('mobileMenu');
-        const closeMenu = document.getElementById('closeMenu');
-        const mobileLinks = document.querySelectorAll('.mobile-link');
- 
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.add('active');
-            document.body.style.overflow = 'hidden';
-        });
- 
-        closeMenu.addEventListener('click', () => {
-            mobileMenu.classList.remove('active');
-            document.body.style.overflow = 'auto';
-        });
- 
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.remove('active');
-                document.body.style.overflow = 'auto';
-            });
-        });
- 
-        // Smooth scroll with offset for fixed header
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    const headerOffset = 80;
-                    const elementPosition = target.getBoundingClientRect().top;
-                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
- 
-                    window.scrollTo({
-                        top: offsetPosition,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
- 
-        // Intersection Observer for animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
- 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
- 
-        document.querySelectorAll('.glass-card').forEach(card => {
-            observer.observe(card);
-        });
+        // عداد كاس العالم
+        const worldCup = new Date("2026-06-11T00:00:00").getTime();
+        setInterval(function() {
+            const now = new Date().getTime();
+            const distance = worldCup - now;
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            document.getElementById("countdown").innerHTML = `متبقي ${days} يوم و ${hours} ساعة على كأس العالم 2026 - الأماكن محدودة!`;
+        }, 1000);
+
+        // عداد الزوار والحجوزات - يتحدث كل 5 ثواني عشان الواقعية
+        function updateSocialProof() {
+            const viewers = Math.floor(Math.random() * 50) + 98; // من 98 الى 147
+            const bookings = Math.floor(Math.random() * 8) + 19; // من 19 الى 26
+            document.getElementById("liveViews").innerHTML = `🔥 يشاهد الموقع الآن ${viewers} شخص | تم حجز ${bookings} غرفة اليوم`;
+        }
+        setInterval(updateSocialProof, 5000);
+        updateSocialProof();
     </script>
-<script>(function(){document.addEventListener("click",function(e){var a=e.target.closest("[data-product-id]");if(!a)return;e.preventDefault();var pid=a.getAttribute("data-product-id");if(pid)parent.postMessage({type:"ecto-artifact-link-click",productId:pid},"*")})})();</script>
 </body>
 </html>
